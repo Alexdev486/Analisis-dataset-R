@@ -3,8 +3,6 @@
 Exploratory Data Analysis (EDA) completo sobre track_data_final.csv, con limpieza, feature engineering y visualizaciones listas para modelado de IA.
 
 🛠️ Resumen del Script
-
-Archivo: EDA_Spotify_2009_2025_professional_v2.R
 Objetivo: Limpiar, preparar y enriquecer el dataset para análisis y modelado.
 
 Principales pasos realizados:
