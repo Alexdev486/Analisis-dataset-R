@@ -38,11 +38,6 @@ pip install rpy2
 # Cargar extensión
 %load_ext rpy2.ipython
 
-# Ejecutar script
-%%R
-Rscript EDA_Spotify_2009_2025_professional_v2.R
-
-
 Archivos generados:
 
 processed_spotify_eda_final.csv → dataset procesado
