@@ -54,15 +54,13 @@ eda_plots/correlation_matrix.csv → matriz de correlación numérica
 | `release_decade`                        | int        | Agrupación cultural por década                  |
 | `duration_min`                          | numeric    | Duración en minutos (más interpretable)         |
 | `popularity_label`                      | factor     | Clasificación de popularidad (4 bins)           |
-| `artist_followers_log`                  | numeric    | log1p para reducir skew                         |
-| `artist_popularity_z`                   | numeric    | Z-score para normalización                      |
 | `title_len` / `title_n_words`           | int        | Largo y palabras → features de NLP              |
 | `title_has_feat`                        | logical    | Colaboraciones → predictor de éxito             |
 | `n_genres` / `genre_primary`            | int / char | Reducción de cardinalidad, análisis multi-genre |
 | `track_pos_in_album`                    | numeric    | Pistas iniciales vs finales                     |
 | `album_age_years`                       | numeric    | Relación recencia ↔ popularidad                 |
 | `artist_top20`                          | factor     | Reduce cardinalidad de artistas dominantes      |
-| `duration_min_z` / `track_popularity_z` | numeric    | Normalizaciones para modelado                   |
+
 Estas columnas permiten regresión, clasificación, reducción de cardinalidad y preparación para algoritmos que requieren features escaladas.
 
 📊 Gráficas Clave
@@ -73,6 +71,7 @@ Estas columnas permiten regresión, clasificación, reducción de cardinalidad y
 | `04_tracks_per_year_2000_2025.png`    | Barras              | Volumen anual de datos; detectar años con pocas muestras   |
 | `06_correlation_heatmap_improved.png` | Heatmap             | Multicolinealidad y relaciones entre variables             |
 | `02_top20_artists.png`                | Barras horizontales | Sesgo por artista; reducir cardinalidad con `artist_top20` |
+
 Cada gráfica guía decisiones de modelado: selección de features, imputación, manejo de drift temporal y balance de clases.
 
 ⚠️ Observaciones 
